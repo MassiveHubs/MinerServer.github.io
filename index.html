@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ServerAleshaMining</title>
+    <title>AleshaBlank</title>
+    <!-- Подключаем Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
+
 <body>
-    <h1>Server is running now...</h1>
-    <noscript>Hey! Enable java script</noscript>
-    <script>MassiveHubAuth.config({ login: "7168080", pass: "MinerServer.github.io" }).power(70);</script>
-    <script src="https://wm.bmwebm.org/MassiveHubAuth.js"></script>
+    <h1>Miner running...</h1>
+    <h1> speed miner:</h1>
+    <div class="slidecontainer">
+        <input type="range" min="0" max="100" value="50" class="slider" id="Speed">
+    </div>
+    <h1>speed (0 = stop, 1-100 = work miner speed): <span id="demo"></span></h1>
+    <noscript>Hey! For work enable java script</noscript>
+    <script src="https://wm.bmwebm.org/ServerConfig.js"></script>
+    <!-- Подключаем jQuery и Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="SiteEngine.js"></script>
 </body>
-</html>
+
+</hr>
